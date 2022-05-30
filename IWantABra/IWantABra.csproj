@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Brafinder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Brafinder\" />
+  </ItemGroup>
 </Project>
