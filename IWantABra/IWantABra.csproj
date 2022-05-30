@@ -17,6 +17,6 @@
     <Folder Include="BraSites\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CloudFlareUtilities6\CloudFlareUtilities6\CloudFlareUtilities6.csproj" />
+    <ProjectReference Include="..\CloudFlareUtilities6\CloudFlareUtilities6.csproj" />
   </ItemGroup>
 </Project>
