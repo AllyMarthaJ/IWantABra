@@ -14,7 +14,7 @@ namespace IWantABra.Brafinder
 		/// </summary>
 		/// <param name="source">The source of the request to parse.</param>
 		/// <returns>Number of pages available</returns>
-		public int GetPageCount (string source);
+		public (int minimum, int maximum) GetPages (string source);
 
 		/// <summary>
 		/// Get a list of URLs to available bras in the given size.
@@ -34,9 +34,10 @@ namespace IWantABra.Brafinder
 		/// <summary>
 		/// Fetch all available bras using a given size.
 		/// </summary>
+		/// <param name="pages">The pages to fetch</param>
 		/// <param name="size">The bra size</param>
 		/// <returns></returns>
-		public Task<BraPage []> GetBrasAsync (Size size);
+		public Task<BraPage []> GetBrasAsync (int [] pages, Size size);
 	}
 }
 

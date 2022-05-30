@@ -5,4 +5,3 @@ namespace IWantABra.Brafinder
 	public record Size(int BandSize, string CupSize);
 	public record BraPage(Bra[] Bras);
 }
-
