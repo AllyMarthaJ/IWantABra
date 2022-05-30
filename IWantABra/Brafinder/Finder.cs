@@ -17,7 +17,7 @@ namespace IWantABra.Brafinder {
 			(int minimum, int maximum) = this.BraSite.GetPages (source);
 			int [] pages = Enumerable.Range (minimum, maximum - minimum + 1).ToArray ();
 
-			var allBras = await this.BraSite.GetBrasAsync (pages, this.SizeFilter);
+			var allBras = await this.BraSite.GetBrasAsync (pages);
 
 			return allBras
 				.Select (o => o.Bras)

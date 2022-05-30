@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="Brafinder\" />
+    <None Remove="BraSites\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Brafinder\" />
+    <Folder Include="BraSites\" />
   </ItemGroup>
 </Project>

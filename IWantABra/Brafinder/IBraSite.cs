@@ -20,9 +20,8 @@ namespace IWantABra.Brafinder
 		/// Get a list of URLs to available bras in the given size.
 		/// </summary>
 		/// <param name="page">The page number</param>
-		/// <param name="size">The bra size</param>
 		/// <returns>List of URLs to each available bra</returns>
-		public Task<string[]> GetBrasAsync (int page, Size size);
+		public Task<string[]> GetBrasAsync (int page);
 
 		/// <summary>
 		/// Fetch information about a bra.
@@ -32,12 +31,11 @@ namespace IWantABra.Brafinder
 		public Task<Bra> GetBraAsync (string url);
 
 		/// <summary>
-		/// Fetch all available bras using a given size.
+		/// Fetch all available bras.
 		/// </summary>
 		/// <param name="pages">The pages to fetch</param>
-		/// <param name="size">The bra size</param>
 		/// <returns></returns>
-		public Task<BraPage []> GetBrasAsync (int [] pages, Size size);
+		public Task<BraPage []> GetBrasAsync (int [] pages);
 	}
 }
 
