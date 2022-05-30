@@ -50,7 +50,7 @@ namespace IWantABra.BraSites
 				sizes.Add (new Size (bandSize, cupSize));
 			}
 
-			var bra = new Bra (braName, sizes.ToArray ());
+			var bra = new Bra (braName, url, sizes.ToArray ());
 
 			return bra;
 		}
