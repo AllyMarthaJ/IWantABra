@@ -10,9 +10,13 @@
   <ItemGroup>
     <None Remove="Brafinder\" />
     <None Remove="BraSites\" />
+    <None Remove="CloudFlareUtilities6" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Brafinder\" />
     <Folder Include="BraSites\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CloudFlareUtilities6\CloudFlareUtilities6\CloudFlareUtilities6.csproj" />
   </ItemGroup>
 </Project>
