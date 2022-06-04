@@ -17,7 +17,11 @@ class Program {
 			Console.WriteLine ("<---- NEW ROUND OF BRAS ---->");
 			foreach (var bra in bras) {
 				Console.WriteLine ("<---- SENDING ---->");
-				await braSender.SendBraAsync (bra);
+				try {
+					await braSender.SendBraAsync (bra);
+				} catch (Exception ex) {
+					Console.WriteLine (ex.Message);
+				}
 			}
 
 			Console.WriteLine ("Now waiting 30 minutes.");

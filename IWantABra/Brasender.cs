@@ -41,7 +41,9 @@ namespace IWantABra {
 			Bra [] bras;
 			try {
 				bras = await this.Finder.FindAllBrasAsync ();
-			} catch {
+			} catch (Exception ex) {
+				Console.WriteLine (ex.Message);
+				//Console.WriteLine (ex.InnerException.Message);
 				return lastBras;
 			}
 
